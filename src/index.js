@@ -17,8 +17,6 @@
      * @param {Uint8Array}	key
      *
      * @return {!Uint8Array}
-     *
-     * @throws {Error} If input is incorrect
      */
     function Blake2b(output_length, key){
       output_length == null && (output_length = 64);
@@ -71,8 +69,6 @@
      * @param {Uint8Array}	key
      *
      * @return {!Uint8Array}
-     *
-     * @throws {Error} If input is incorrect
      */
     function Blake2s(output_length, key){
       output_length == null && (output_length = 32);

@@ -16,8 +16,6 @@ function Wrapper (lib)
 	 * @param {Uint8Array}	key
 	 *
 	 * @return {!Uint8Array}
-	 *
-	 * @throws {Error} If input is incorrect
 	 */
 	function Blake2b (output_length = 64, key = null)
 		if !(@ instanceof Blake2b)
@@ -62,8 +60,6 @@ function Wrapper (lib)
 	 * @param {Uint8Array}	key
 	 *
 	 * @return {!Uint8Array}
-	 *
-	 * @throws {Error} If input is incorrect
 	 */
 	function Blake2s (output_length = 32, key = null)
 		if !(@ instanceof Blake2s)
