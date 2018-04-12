@@ -1,0 +1,38 @@
+{
+	"name"            : "blake2.wasm",
+	"description"     : "BLAKE2b and BLAKE2s hash functions compiled to WebAssembly using Emscripten and optimized for small size",
+	"keywords"        : [
+		"blake2",
+		"blake2b",
+		"blake2s",
+		"hashing",
+		"crypto",
+		"webassembly",
+		"wasm",
+		"emscripten"
+	],
+	"version"         : "0.1.0",
+	"homepage"        : "https://github.com/nazar-pc/blake2.wasm",
+	"author"          : "Nazar Mokrynskyi <nazar@mokrynskyi.com>",
+	"repository"      : {
+		"type" : "git",
+		"url"  : "git://github.com/nazar-pc/blake2.wasm.git"
+	},
+	"license"         : "0BSD",
+	"main"            : "src/index.js",
+	"files"           : [
+		"src"
+	],
+	"scripts"         : {
+		"test"   : "tape tests/**/*.js",
+		"vendor" : "git clone https://github.com/BLAKE2/BLAKE2.git vendor; cd vendor; git checkout beb75f4512223e6a3a03a48992345256c5ef393a",
+		"build"  : "gulp build"
+	},
+	"devDependencies" : {
+		"glob"        : "^7.1.2",
+		"gulp"        : "^3.9.1",
+		"gulp-rename" : "^1.2.2",
+		"gulp-uglify" : "^3.0.0",
+		"tape"        : "^4.9.0"
+	}
+}
