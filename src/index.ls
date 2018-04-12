@@ -69,7 +69,7 @@ function Wrapper (lib)
 		if !(@ instanceof Blake2s)
 			return new Blake2s(output_length, key)
 		@_output_length	= output_length
-		@_state			= allocate(240)
+		@_state			= allocate(176)
 		if key && key.length
 			key	= allocate(0, key)
 			lib._blake2s_init_key(@_state, output_length, key, key.length)

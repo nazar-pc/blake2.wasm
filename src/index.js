@@ -81,7 +81,7 @@
         return new Blake2s(output_length, key);
       }
       this._output_length = output_length;
-      this._state = allocate(240);
+      this._state = allocate(176);
       if (key && key.length) {
         key = allocate(0, key);
         lib._blake2s_init_key(this._state, output_length, key, key.length);
