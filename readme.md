@@ -28,7 +28,7 @@ requirejs(['blake2.wasm'], function (blake2) {
 ### blake2.ready(callback)
 * `callback` - Callback function that is called when WebAssembly is loaded and library is ready for use
 
-### blake2.Blake2b(output_length = 64 : number, key = null  Uint8Array) : Blake2b
+### blake2.Blake2b(output_length = 64 : number, key = null : Uint8Array) : Blake2b
 Create Blake2b object that can later be updated with data
 
 * `output_length` - Length of output hash in bytes, defaults to full 512-bit hash (64 bytes)
@@ -40,7 +40,7 @@ Update instance with data
 ### blake2.Blake2b.final() : Uint8Array
 Get hash
 
-### blake2.Blake2s(output_length = 32 : number, key = null  Uint8Array) : Blake2s
+### blake2.Blake2s(output_length = 32 : number, key = null : Uint8Array) : Blake2s
 Create Blake2s object that can later be updated with data
 
 * `output_length` - Length of output hash in bytes, defaults to full 256-bit hash (32 bytes)
