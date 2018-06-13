@@ -1,6 +1,8 @@
 # blake2.wasm [![Travis CI](https://img.shields.io/travis/nazar-pc/blake2.wasm/master.svg?label=Travis%20CI)](https://travis-ci.org/nazar-pc/blake2.wasm)
 [BLAKE2b and BLAKE2s hash functions](https://blake2.net/) compiled to WebAssembly using Emscripten and optimized for small size
 
+For pure JavaScript implementation that is not performance-critical you might want to consider [blakejs](https://github.com/dcposch/blakejs) instead.
+
 ## How to install
 ```
 npm install blake2.wasm
